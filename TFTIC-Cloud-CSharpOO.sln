@@ -5,13 +5,17 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercices", "Exercices", "{BF46A6DA-BE3B-4CCA-8B2D-EB76956D121F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionBanque8", ".\GestionBanque8\GestionBanque8.csproj", "{8B19D826-78A3-46F1-97A5-914D936331FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionBanque8", "GestionBanque8\GestionBanque8.csproj", "{8B19D826-78A3-46F1-97A5-914D936331FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionBanque9", ".\GestionBanque9\GestionBanque9.csproj", "{0EE2E1CD-56C2-4723-A82A-B6DE59B3A8F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionBanque9", "GestionBanque9\GestionBanque9.csproj", "{0EE2E1CD-56C2-4723-A82A-B6DE59B3A8F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Démos", "Démos", "{3FC0AF62-34BE-4CCB-AD41-C2C4C7415E1C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-exception", ".\Demo-exception\Demo-exception.csproj", "{DAF5053F-B9A5-4C26-A451-91DE119C6F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-exception", "Demo-exception\Demo-exception.csproj", "{DAF5053F-B9A5-4C26-A451-91DE119C6F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Delegate-01", "Demo-Delegate-01\Demo-Delegate-01.csproj", "{D206F739-77E3-48D1-920E-E6E623B316FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Delegate-02", "Demo-Delegate-02\Demo-Delegate-02.csproj", "{4386EE09-2B0B-4ECD-9F98-C8AC723862B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,14 @@ Global
 		{DAF5053F-B9A5-4C26-A451-91DE119C6F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAF5053F-B9A5-4C26-A451-91DE119C6F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAF5053F-B9A5-4C26-A451-91DE119C6F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D206F739-77E3-48D1-920E-E6E623B316FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D206F739-77E3-48D1-920E-E6E623B316FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D206F739-77E3-48D1-920E-E6E623B316FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D206F739-77E3-48D1-920E-E6E623B316FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4386EE09-2B0B-4ECD-9F98-C8AC723862B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4386EE09-2B0B-4ECD-9F98-C8AC723862B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4386EE09-2B0B-4ECD-9F98-C8AC723862B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4386EE09-2B0B-4ECD-9F98-C8AC723862B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +51,8 @@ Global
 		{8B19D826-78A3-46F1-97A5-914D936331FC} = {BF46A6DA-BE3B-4CCA-8B2D-EB76956D121F}
 		{0EE2E1CD-56C2-4723-A82A-B6DE59B3A8F2} = {BF46A6DA-BE3B-4CCA-8B2D-EB76956D121F}
 		{DAF5053F-B9A5-4C26-A451-91DE119C6F20} = {3FC0AF62-34BE-4CCB-AD41-C2C4C7415E1C}
+		{D206F739-77E3-48D1-920E-E6E623B316FD} = {3FC0AF62-34BE-4CCB-AD41-C2C4C7415E1C}
+		{4386EE09-2B0B-4ECD-9F98-C8AC723862B3} = {3FC0AF62-34BE-4CCB-AD41-C2C4C7415E1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42946028-6841-45FB-9EFA-CB1762AD7425}
