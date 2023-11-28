@@ -42,3 +42,15 @@ Console.WriteLine("Après Application interets :");
 Console.WriteLine($"Somme des avoir du compte de la personne : {banque.AvoirDesComptes(personne)} Eur.");
 Console.WriteLine($"La date du dernier retrait du compte epargne est : {compte3Personne.DernierRetrait}");
 Console.WriteLine("-----------------------------------------------------------");
+
+
+try
+{
+    //Courant compte4Personne = new Courant("000-000-000-04", personne, -200);
+    comptePersonne.Retrait(200000);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.GetType());
+    Console.WriteLine(ex.Message);
+}

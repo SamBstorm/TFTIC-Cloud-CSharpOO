@@ -1,10 +1,10 @@
-﻿using GestionBanque9.Models;
-using GestionBanque7.Interfaces;
+﻿using GestionBanque9.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GestionBanque9.Exceptions;
 
 namespace GestionBanque9.Models
 {
@@ -45,14 +45,19 @@ namespace GestionBanque9.Models
         {
             if (montant <= 0)
             {
-                Console.WriteLine("Le montant doit être supérieur a zéro !");
-                return; // à remplacer par une exception
+                //Attention pas de Console.WriteLine() dans une class prévu pour du multiplateforme
+                //Console.WriteLine("Le montant doit être supérieur a zéro !");
+
+                //Envoyons un message grâce à l'exception!
+                throw new ArgumentOutOfRangeException(nameof(montant), "Le montant doit être supérieur a zéro !");
             }
 
             if (Solde - montant <= ligneDeCredit)
             {
-                Console.WriteLine("Solde insufissant !");
-                return; // à remplacer par une exception
+                //Attention pas de Console.WriteLine() dans une class prévu pour du multiplateforme
+                //Console.WriteLine("Solde insufissant !");
+
+                throw new SoldeInsuffisantException(Solde, montant, ligneDeCredit);
             }
 
             Solde -= montant;
@@ -69,9 +74,11 @@ namespace GestionBanque9.Models
         {
             if (montant <= 0)
             {
-                Console.WriteLine("Le montant doit être supérieur a zéro !");
+                //Attention pas de Console.WriteLine() dans une class prévu pour du multiplateforme
+                //Console.WriteLine("Le montant doit être supérieur a zéro !");
 
-                return; // à remplacer par une exception
+                //Envoyons un message grâce à l'exception!
+                throw new ArgumentOutOfRangeException(nameof(montant), "Le montant doit être supérieur a zéro !");
             }
             Solde += montant;
         }

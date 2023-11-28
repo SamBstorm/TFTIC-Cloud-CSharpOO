@@ -20,7 +20,7 @@ namespace GestionBanque9.Models
             {
                 if (value < 0)
                 {
-                    return; // à remplacer plus tard par une exception
+                    throw new InvalidOperationException("La ligne de crédit ne peut être inférieur à zéro.");
                 }
 
                 _LigneDeCredit = value;
@@ -35,12 +35,12 @@ namespace GestionBanque9.Models
 
         public Courant(string numero, Personne titulaire, double ligneDeCredit) : base(numero, titulaire)
         {
-            _LigneDeCredit = ligneDeCredit;
+            LigneDeCredit = ligneDeCredit;
         }
 
         public Courant(string numero, Personne titulaire, double ligneDeCredit, double solde) : base(numero, titulaire, solde)
         {
-            _LigneDeCredit = ligneDeCredit;
+            LigneDeCredit = ligneDeCredit;
         }
 
         #endregion
